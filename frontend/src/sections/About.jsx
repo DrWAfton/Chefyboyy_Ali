@@ -10,11 +10,10 @@ const fadeUp = {
 
 const SIGNATURE_MENU = [
     { name: "Grilled Chicken", note: "marinated, charred, juicy" },
-    { name: "Ribs", note: "low and slow" },
     { name: "Smoked Sausage", note: "hot links, pepper-snapped" },
-    { name: "BigBoy Sandwich", note: "chicken & bacon, stacked" },
-    { name: "Hand-Cut Jerky", note: "cured & smoked, given away" },
+    { name: "Ribs", note: "low and slow" },
     { name: "Shoestring Fries", note: "with every plate" },
+    { name: "Hand-Cut Jerky", note: "the fundraiser — cured & smoked" },
 ];
 
 export const About = () => {
@@ -44,28 +43,15 @@ export const About = () => {
 
                         <div className="mt-8 space-y-5 font-body text-brand-inkSoft text-base sm:text-lg leading-relaxed max-w-2xl">
                             <p>
-                                Angel Ali is a chef based out of San Antonio and Converse, Texas.
-                                Friends call him <em>Chef Boy Ali</em>; the porch calls him{" "}
-                                <em>the Cook of Converse</em>. He earned his culinary education at
-                                the{" "}
-                                <span className="text-brand-ink font-medium">
-                                    Auguste Escoffier School of Culinary Arts
-                                </span>
-                                , then took the craft straight to the streets.
+                                Angel Ali is a chef based out of San Antonio and Converse, Texas. Friends call him <em>Chef Boy Ali</em>; the porch calls him <em>the Cook of Converse</em>. He earned his culinary education at the <span className="text-brand-ink font-medium">Auguste Escoffier School of Culinary Arts</span>, then took the craft straight to the streets.
                             </p>
                             <p>
-                                Ali doesn't run a restaurant. He cooks{" "}
-                                <span className="text-brand-ink font-medium">in public</span> — at
-                                The Thursty Turtle, at lunch drops for local employees, and at
-                                community events for inmates and the indigent on the first Friday
-                                of the month. The food is{" "}
-                                <span className="text-brand-ink font-medium">free</span>. The hand-cut
-                                jerky is free. The BigBoy chicken-and-bacon sandwiches are free.
-                                That's the whole point.
+                                Ali doesn't run a restaurant. He cooks <span className="text-brand-ink font-medium">in public</span> — at lunch drops for local employees and at community events for inmates and the indigent on the first Friday of the month. The food is <span className="text-brand-ink font-medium">free</span>. The next cookout lands at The Thursty Turtle in San Antonio.
                             </p>
                             <p>
-                                Show up hungry. Stay for a story. Leave full.
+                                Hand-cut jerky, smoked low and slow, is the one thing he sells — and every dollar goes back into the fundraiser that pays for the next free cookout.
                             </p>
+                            <p>Show up hungry. Stay for a story. Leave full.</p>
                         </div>
 
                         {/* Signature menu */}
@@ -95,7 +81,7 @@ export const About = () => {
                         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
                             <div className="border-l-2 border-brand-ember pl-4">
                                 <div className="flex items-center gap-2 eyebrow text-brand-smoke mb-2">
-                                    <MapPin size={14} /> Cookouts at
+                                    <MapPin size={14} /> Next Event
                                 </div>
                                 <div className="font-display text-lg text-brand-ink leading-snug">
                                     The Thursty Turtle

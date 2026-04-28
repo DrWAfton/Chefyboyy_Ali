@@ -48,8 +48,7 @@ export const Hero = () => {
                             <span className="text-brand-bone/70">— neighbors call me</span>{" "}
                             <span className="italic">Chef Boy Ali</span>, the cook of Converse.
                             I fire up the grill in public spaces around San Antonio, hand-cook
-                            jerky, build BigBoy chicken &amp; bacon sandwiches, and feed the
-                            block for free.
+                            jerky for the fundraiser, and feed the block for free.
                         </p>
                     </div>
 
@@ -75,7 +74,7 @@ export const Hero = () => {
 
                     <div className="mt-14 flex items-center gap-6 text-brand-bone/70">
                         <MapPin size={16} strokeWidth={1.5} />
-                        <span className="eyebrow">{SITE.venue}</span>
+                        <span className="eyebrow">Next event: {SITE.venue}</span>
                     </div>
                 </motion.div>
             </div>
