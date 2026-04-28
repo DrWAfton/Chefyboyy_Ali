@@ -1,0 +1,133 @@
+{
+  "theme": "light",
+  "archetype": "1_organic_earthy",
+  "design_philosophy": {
+    "core_principles": [
+      "Authenticity over polish: use raw textures, wood, and earthy tones to evoke the feeling of a rustic Texas BBQ.",
+      "Food is the Hero: Keep UI elements minimalist so the high-quality food photography stands out.",
+      "Tactile interfaces: Buttons and cards should feel grounded, using subtle inner shadows or borders instead of generic drop shadows."
+    ],
+    "emotional_tone": "Warm, inviting, sensory, rustic, authentic."
+  },
+  "colors": {
+    "background": {
+      "primary": "#F8F5F0",
+      "secondary": "#EAE4D9",
+      "tertiary": "#D5CEBD"
+    },
+    "text": {
+      "primary": "#1C1C1A",
+      "secondary": "#4A4A46",
+      "muted": "#75756E"
+    },
+    "brand": {
+      "primary": "#B24C38",
+      "primary_hover": "#8C3A2A",
+      "accent": "#2C3525"
+    },
+    "surfaces": {
+      "card": "#FFFFFF",
+      "card_border": "#D5CEBD",
+      "input_bg": "#FFFFFF",
+      "input_border": "#D5CEBD"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Cormorant Garamond', serif",
+      "body": "'Work Sans', sans-serif",
+      "accent": "'Caveat', cursive"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl leading-snug",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm uppercase tracking-[0.15em]"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 sm:px-8 lg:px-12",
+    "section_padding": "py-24 sm:py-32",
+    "gap_system": "gap-8 sm:gap-12 lg:gap-16",
+    "grid_strategies": {
+      "specialties": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 with irregular spanning for the 5 items (e.g. first two take 1.5 cols each on large, next three take 1 col)",
+      "about": "grid-cols-1 md:grid-cols-12, text spans 7, image spans 5"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-brand-primary text-white rounded-none px-8 py-4 text-sm uppercase tracking-widest hover:bg-brand-primary_hover transition-colors",
+      "secondary": "bg-transparent text-text-primary border border-text-primary rounded-none px-8 py-4 text-sm uppercase tracking-widest hover:bg-text-primary hover:text-white transition-colors"
+    },
+    "cards": {
+      "style": "bg-surfaces-card border border-surfaces-card_border rounded-sm p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
+    },
+    "forms": {
+      "inputs": "bg-surfaces-input_bg border-b border-surfaces-input_border rounded-none px-0 py-3 focus:outline-none focus:border-brand-primary focus:ring-0 text-text-primary placeholder:text-text-muted transition-colors"
+    },
+    "navigation": {
+      "style": "fixed w-full z-50 bg-background-primary/90 backdrop-blur-md border-b border-surfaces-card_border py-4 px-6 sm:px-8 flex justify-between items-center"
+    }
+  },
+  "media": {
+    "hero_image": {
+      "url": "https://images.pexels.com/photos/37128259/pexels-photo-37128259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Chef grilling outdoors",
+      "overlay": "bg-black/30"
+    },
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1569352950904-02365bd8c013?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHw0fHxjaGVmJTIwY29va2luZyUyMG91dGRvb3JzJTIwYmJxfGVufDB8fHx8MTc3NzQxMTQyNHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Chef Ali cooking on a charcoal grill"
+    },
+    "specialties": [
+      {
+        "title": "Texas BBQ",
+        "url": "https://images.pexels.com/photos/36700839/pexels-photo-36700839.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Smoked brisket"
+      },
+      {
+        "title": "Comfort Food",
+        "url": "https://images.pexels.com/photos/7169619/pexels-photo-7169619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Fried chicken wings"
+      },
+      {
+        "title": "Mexican & Tex-Mex",
+        "url": "https://images.pexels.com/photos/32371269/pexels-photo-32371269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Fajitas and tortillas"
+      },
+      {
+        "title": "Rustic Italian",
+        "url": "https://images.pexels.com/photos/30217392/pexels-photo-30217392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Carbonara pasta"
+      },
+      {
+        "title": "Decadent Desserts",
+        "url": "https://images.pexels.com/photos/36616786/pexels-photo-36616786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Tres Leches and Flan"
+      }
+    ]
+  },
+  "interactive_elements": {
+    "booking_form": "Shadcn UI Calendar + Form components. Customized to remove the 'tech/SaaS' look. Use square corners, earthy borders, and warm active states.",
+    "testimonials": "Use react-fast-marquee for an 'Editorial Ribbon' of quotes. Slow, smooth, elegant serif text on a subtle secondary background.",
+    "animations": "Framer Motion for gentle fade-up on scroll. No aggressive scaling or bouncing. Transitions should feel organic and relaxed."
+  },
+  "testing": {
+    "required_attributes": [
+      "data-testid='hero-book-button'",
+      "data-testid='booking-form'",
+      "data-testid='booking-date-picker'",
+      "data-testid='booking-submit'",
+      "data-testid='nav-link-*'"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, react-fast-marquee, lucide-react (if not present), and configure google fonts for 'Cormorant Garamond', 'Work Sans', and 'Caveat'.",
+    "Implement a smooth scrolling single-page layout (use Lenis if possible, otherwise native CSS smooth scroll).",
+    "For the Specialties section, build an asymmetric image grid using the provided specialty images. Ensure images are high-quality and object-cover.",
+    "For the Sample Menus section, use typography-led design (like a physical restaurant menu) rather than typical web cards.",
+    "In the Booking/Contact section, integrate Shadcn's Calendar and Form components. Strip their default border-radius to match the rustic/raw aesthetic (use rounded-none or rounded-sm).",
+    "Include the Instagram link as a prominent social CTA in the footer and nav."
+  ]
+}
