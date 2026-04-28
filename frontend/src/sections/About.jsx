@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Instagram, Facebook, MapPin, Calendar as CalIcon } from "lucide-react";
-import { ABOUT_IMAGE, SITE } from "../data/content";
+import { ABOUT_IMAGE, COOKOUT_GALLERY, SITE } from "../data/content";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
@@ -81,7 +81,7 @@ export const About = () => {
                         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
                             <div className="border-l-2 border-brand-ember pl-4">
                                 <div className="flex items-center gap-2 eyebrow text-brand-smoke mb-2">
-                                    <MapPin size={14} /> Next Event · May 3
+                                    <MapPin size={14} /> Next Event · May 2
                                 </div>
                                 <div className="font-display text-lg text-brand-ink leading-snug">
                                     The Thursty Turtle
@@ -134,13 +134,13 @@ export const About = () => {
                         whileInView="show"
                         viewport={{ once: true, margin: "-80px" }}
                         transition={{ delay: 0.15 }}
-                        className="lg:col-span-5 lg:order-1 lg:sticky lg:top-28"
+                        className="lg:col-span-5 lg:order-1"
                     >
                         <div className="relative">
                             <div className="aspect-[4/5] overflow-hidden bg-brand-clay">
                                 <img
                                     src={ABOUT_IMAGE}
-                                    alt="Chef Ali tending to a charcoal grill"
+                                    alt="Spice-rubbed chicken on the grill"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

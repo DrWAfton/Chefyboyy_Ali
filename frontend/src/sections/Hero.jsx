@@ -15,10 +15,11 @@ export const Hero = () => {
             <div className="absolute inset-0">
                 <img
                     src={HERO_IMAGE}
-                    alt="Chef cooking outdoors over open flame"
-                    className="w-full h-full object-cover"
+                    alt="Chef Ali in his kitchen"
+                    className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/80 via-brand-ink/40 to-brand-ink/30" />
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-ink/90 via-brand-ink/70 to-brand-ink/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/70 via-transparent to-transparent" />
                 <div className="absolute inset-0 grain" />
             </div>
 
@@ -44,11 +45,7 @@ export const Hero = () => {
 
                     <div className="mt-8 max-w-xl">
                         <p className="font-body text-base sm:text-lg text-brand-bone/85 leading-relaxed">
-                            I'm <span className="font-script text-2xl text-brand-bone">Angel Ali</span>{" "}
-                            <span className="text-brand-bone/70">— neighbors call me</span>{" "}
-                            <span className="italic">Chef Boy Ali</span>, the cook of Converse.
-                            I fire up the grill in public spaces around San Antonio, hand-cook
-                            jerky for the fundraiser, and feed the block for free.
+                            I'm <span className="font-script text-2xl text-brand-bone">Angel Ali</span>, known locally as <span className="italic">Chef Boy Ali</span>, the Cook of Converse. I host monthly pop-up cookouts around San Antonio where I serve free meals to anyone in need — or anyone who just wants to come eat and connect. I also make jerky for fundraisers to help cover event costs like food, fuel, and supplies. Donations and tips are accepted, with the option to stay anonymous or be recognized.
                         </p>
                     </div>
 
@@ -74,7 +71,7 @@ export const Hero = () => {
 
                     <div className="mt-14 flex items-center gap-6 text-brand-bone/70">
                         <MapPin size={16} strokeWidth={1.5} />
-                        <span className="eyebrow">Next event · May 3 · {SITE.venue}</span>
+                        <span className="eyebrow">Next event · May 2 · {SITE.venue}</span>
                     </div>
                 </motion.div>
             </div>

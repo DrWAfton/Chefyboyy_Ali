@@ -10,8 +10,20 @@ export const SITE = {
     facebookHandle: "@chefboyyali",
 };
 
-export const HERO_IMAGE = "https://images.pexels.com/photos/37128259/pexels-photo-37128259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1200&w=1800";
-export const ABOUT_IMAGE = "https://images.unsplash.com/photo-1569352950904-02365bd8c013?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200";
+export const HERO_IMAGE = "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/1ps5ny9v_Screenshot%202026-04-28%20180944.png";
+export const ABOUT_IMAGE = "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/0ovpye32_image.png";
+export const COOKOUT_GALLERY = [
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3jk3qf2m_Screenshot%202026-04-28%20180932.png",
+        alt: "Slow-smoked whole pig finished with gold leaf",
+        caption: "Whole pig · gold leaf finish",
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/ip236xla_Screenshot%202026-04-28%20181109.png",
+        alt: "Spice-rubbed whole chicken on the grill",
+        caption: "Whole bird · low and slow",
+    },
+];
 
 export const SPECIALTIES = [
     {
