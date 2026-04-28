@@ -74,7 +74,7 @@ export const Hero = () => {
 
                     <div className="mt-14 flex items-center gap-6 text-brand-bone/70">
                         <MapPin size={16} strokeWidth={1.5} />
-                        <span className="eyebrow">Next event: {SITE.venue}</span>
+                        <span className="eyebrow">Next event · May 3 · {SITE.venue}</span>
                     </div>
                 </motion.div>
             </div>

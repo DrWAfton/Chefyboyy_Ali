@@ -81,7 +81,7 @@ export const About = () => {
                         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
                             <div className="border-l-2 border-brand-ember pl-4">
                                 <div className="flex items-center gap-2 eyebrow text-brand-smoke mb-2">
-                                    <MapPin size={14} /> Next Event
+                                    <MapPin size={14} /> Next Event · May 3
                                 </div>
                                 <div className="font-display text-lg text-brand-ink leading-snug">
                                     The Thursty Turtle
