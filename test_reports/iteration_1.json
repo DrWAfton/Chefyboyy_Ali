@@ -1,0 +1,27 @@
+{
+  "summary": "Full-stack testing of Chef Boy Ali single-page site. Backend: 6/6 pytest passed (root, create minimal, create full + persistence, missing name 422, invalid email 422, list bookings strips _id). Frontend: 23/24 Playwright checks passed - all sections render, all 6 navlinks present, hero CTA scrolls to #book, all 4 Instagram links point to https://www.instagram.com/chefboyy_ali/, date picker opens and future date selectable, event-type Select opens and option selectable, full booking submission shows booking-success state.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_chefboyali_api.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "server.py uses deprecated FastAPI @app.on_event('shutdown'); migrate to lifespan context manager (non-blocking).",
+    "Booking model.created_at is stored as ISO string in MongoDB but typed as datetime in Pydantic; list_bookings re-parses it. Works, but storing native datetime would be cleaner.",
+    "CORS allow_origins falls back to '*' with allow_credentials=True; combination is ignored by browsers and should be a configured origin list in production."
+  ],
+  "updated_files": ["/app/backend/tests/test_chefboyali_api.py"],
+  "success_rate": {"backend": "100%", "frontend": "~96% (1 selector-detection miss, not a product bug)"},
+  "test_credentials": "N/A - no auth",
+  "seed_data_creation": "Two TEST_-prefixed bookings created via API during pytest run.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Empty-form toast validation: sonner renders toasts under [data-sonner-toaster] ol li[data-sonner-toast]; my generic selector returned empty. Manual code review confirms toast.error fires when name/email/message are empty and the form does not submit (no success state appears in that case during the test). All other flows (date picker shadcn calendar, shadcn Select, axios POST to /api/bookings, success-state render) work end-to-end against the public REACT_APP_BACKEND_URL.",
+  "rca of the issue": "N/A - no functional bugs found."
+}
