@@ -54,20 +54,22 @@ export const Hero = () => {
 
                     <div className="mt-10 flex flex-col sm:flex-row gap-4">
                         <button
-                            onClick={() => scrollTo("book")}
-                            data-testid="hero-book-button"
+                            onClick={() => scrollTo("about")}
+                            data-testid="hero-about-button"
                             className="bg-brand-ember text-brand-bone px-8 py-4 eyebrow hover:bg-brand-emberDark transition-colors group inline-flex items-center justify-center gap-3"
                         >
-                            Book a Date
+                            Meet the Chef
                             <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
                         </button>
-                        <button
-                            onClick={() => scrollTo("specialties")}
-                            data-testid="hero-menu-button"
-                            className="border border-brand-bone/60 text-brand-bone px-8 py-4 eyebrow hover:bg-brand-bone hover:text-brand-ink transition-colors"
+                        <a
+                            href={SITE.instagram}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            data-testid="hero-instagram-button"
+                            className="border border-brand-bone/60 text-brand-bone px-8 py-4 eyebrow hover:bg-brand-bone hover:text-brand-ink transition-colors text-center"
                         >
-                            See the Menus
-                        </button>
+                            Follow on Instagram
+                        </a>
                     </div>
 
                     <div className="mt-14 flex items-center gap-6 text-brand-bone/70">

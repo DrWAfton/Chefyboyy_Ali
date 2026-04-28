@@ -6,24 +6,12 @@ import { Toaster } from "sonner";
 import { Navbar } from "./sections/Navbar";
 import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
-import { Specialties } from "./sections/Specialties";
-import { Menus } from "./sections/Menus";
-import { Services } from "./sections/Services";
-import { Testimonials } from "./sections/Testimonials";
-import { Booking } from "./sections/Booking";
-import { Footer } from "./sections/Footer";
 
 const Home = () => (
     <main data-testid="home-page" className="bg-brand-bone">
         <Navbar />
         <Hero />
         <About />
-        <Specialties />
-        <Menus />
-        <Services />
-        <Testimonials />
-        <Booking />
-        <Footer />
     </main>
 );
 

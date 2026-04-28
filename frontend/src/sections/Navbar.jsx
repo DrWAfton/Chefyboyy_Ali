@@ -5,11 +5,6 @@ import { SITE } from "../data/content";
 
 const LINKS = [
     { id: "about", label: "About" },
-    { id: "specialties", label: "Specialties" },
-    { id: "menus", label: "Menus" },
-    { id: "services", label: "Services" },
-    { id: "testimonials", label: "Praise" },
-    { id: "book", label: "Book" },
 ];
 
 export const Navbar = () => {
@@ -71,13 +66,6 @@ export const Navbar = () => {
                     >
                         <Instagram size={18} strokeWidth={1.5} />
                     </a>
-                    <button
-                        onClick={() => scrollTo("book")}
-                        data-testid="nav-book-button"
-                        className="bg-brand-ember text-brand-bone px-6 py-3 eyebrow hover:bg-brand-emberDark transition-colors"
-                    >
-                        Book a Date
-                    </button>
                 </nav>
 
                 <button
@@ -118,12 +106,6 @@ export const Navbar = () => {
                             >
                                 <Instagram size={16} /> Instagram
                             </a>
-                            <button
-                                onClick={() => scrollTo("book")}
-                                className="bg-brand-ember text-brand-bone px-6 py-3 eyebrow hover:bg-brand-emberDark transition-colors text-center"
-                            >
-                                Book a Date
-                            </button>
                         </div>
                     </motion.div>
                 )}
