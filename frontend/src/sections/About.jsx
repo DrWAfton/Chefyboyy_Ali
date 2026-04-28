@@ -151,6 +151,42 @@ export const About = () => {
                                 <p className="eyebrow text-brand-smoke mt-2">— Ali's rule no. 1</p>
                             </div>
                         </div>
+
+                        {/* Cookout gallery */}
+                        <div className="mt-12">
+                            <div className="flex items-center gap-3 mb-5">
+                                <span className="h-px w-8 bg-brand-ember" />
+                                <span className="eyebrow text-brand-ember">From the Cookouts</span>
+                            </div>
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+                                {COOKOUT_GALLERY.map((g, i) => (
+                                    <figure
+                                        key={i}
+                                        data-testid={`cookout-photo-${i}`}
+                                        className="group"
+                                    >
+                                        <div className="aspect-square overflow-hidden bg-brand-clay">
+                                            <img
+                                                src={g.url}
+                                                alt={g.alt}
+                                                className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+                                                style={
+                                                    g.crop
+                                                        ? {
+                                                              transform: `scale(${g.crop.scale})`,
+                                                              transformOrigin: `${g.crop.originX}% ${g.crop.originY}%`,
+                                                          }
+                                                        : undefined
+                                                }
+                                            />
+                                        </div>
+                                        <figcaption className="eyebrow text-brand-smoke mt-2 text-[0.65rem]">
+                                            {g.caption}
+                                        </figcaption>
+                                    </figure>
+                                ))}
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>

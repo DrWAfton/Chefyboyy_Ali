@@ -23,6 +23,30 @@ export const COOKOUT_GALLERY = [
         alt: "Spice-rubbed whole chicken on the grill",
         caption: "Whole bird · low and slow",
     },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/hfkb1uq2_image.png",
+        alt: "Smoked beef ribs with shoestring fries",
+        caption: "Smoked ribs · shoestring fries",
+        crop: { scale: 2.4, originX: 30, originY: 55 },
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3rpuou07_image.png",
+        alt: "Bacon-wrapped slab fresh off the grill",
+        caption: "Bacon weave · sliced fresh",
+        crop: { scale: 2.5, originX: 32, originY: 52 },
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/te2916ha_image.png",
+        alt: "Wood platter loaded with grilled meats and bread",
+        caption: "The cookout platter",
+        crop: { scale: 2.4, originX: 32, originY: 57 },
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/4hts4tr4_image.png",
+        alt: "Event flyer: May 2, 1 PM at The Thursty Turtle, 1 free plate per person",
+        caption: "May 2 · 1 PM · come hungry",
+        crop: { scale: 2.5, originX: 34, originY: 50 },
+    },
 ];
 
 export const SPECIALTIES = [
