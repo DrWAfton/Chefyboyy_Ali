@@ -31,15 +31,15 @@ export const Hero = () => {
                 >
                     <div className="flex items-center gap-3 mb-6 text-brand-bone/90">
                         <span className="h-px w-10 bg-brand-bone/60" />
-                        <span className="eyebrow">Private Chef · {SITE.location}</span>
+                        <span className="eyebrow">Community Cookouts · {SITE.location}</span>
                     </div>
 
                     <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-brand-bone leading-[0.95] tracking-tight">
                         Smoke, fire,
                         <br />
-                        <span className="italic font-light">and a seat</span>
+                        <span className="italic font-light">and a plate</span>
                         <br />
-                        at the table.
+                        on the house.
                     </h1>
 
                     <div className="mt-8 max-w-xl">
@@ -47,8 +47,9 @@ export const Hero = () => {
                             I'm <span className="font-script text-2xl text-brand-bone">Angel Ali</span>{" "}
                             <span className="text-brand-bone/70">— neighbors call me</span>{" "}
                             <span className="italic">Chef Boy Ali</span>, the cook of Converse.
-                            Texas BBQ, Tex-Mex, Italian Sundays, and the kind of desserts you
-                            text people about — cooked in your kitchen.
+                            I fire up the grill in public spaces around San Antonio, hand-cook
+                            jerky, build BigBoy chicken &amp; bacon sandwiches, and feed the
+                            block for free.
                         </p>
                     </div>
 
@@ -74,7 +75,7 @@ export const Hero = () => {
 
                     <div className="mt-14 flex items-center gap-6 text-brand-bone/70">
                         <MapPin size={16} strokeWidth={1.5} />
-                        <span className="eyebrow">Converse · San Antonio · South Texas</span>
+                        <span className="eyebrow">{SITE.venue}</span>
                     </div>
                 </motion.div>
             </div>

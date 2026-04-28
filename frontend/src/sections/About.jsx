@@ -1,11 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ABOUT_IMAGE } from "../data/content";
+import { Instagram, Facebook, MapPin, Calendar as CalIcon } from "lucide-react";
+import { ABOUT_IMAGE, SITE } from "../data/content";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
     show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
+
+const SIGNATURE_MENU = [
+    { name: "Grilled Chicken", note: "marinated, charred, juicy" },
+    { name: "Ribs", note: "low and slow" },
+    { name: "Smoked Sausage", note: "hot links, pepper-snapped" },
+    { name: "BigBoy Sandwich", note: "chicken & bacon, stacked" },
+    { name: "Hand-Cut Jerky", note: "cured & smoked, given away" },
+    { name: "Shoestring Fries", note: "with every plate" },
+];
 
 export const About = () => {
     return (
@@ -34,32 +44,101 @@ export const About = () => {
 
                         <div className="mt-8 space-y-5 font-body text-brand-inkSoft text-base sm:text-lg leading-relaxed max-w-2xl">
                             <p>
-                                Angel Ali is a private chef and caterer based in Converse, Texas — a
-                                ten minute drive from downtown San Antonio. Friends, regulars, and
-                                neighbors know him as <em>Chef Boy Ali</em> or, when the porch
-                                conversations get going, <em>the Cook of Converse</em>.
-                            </p>
-                            <p>
-                                He earned his culinary education at the{" "}
+                                Angel Ali is a chef based out of San Antonio and Converse, Texas.
+                                Friends call him <em>Chef Boy Ali</em>; the porch calls him{" "}
+                                <em>the Cook of Converse</em>. He earned his culinary education at
+                                the{" "}
                                 <span className="text-brand-ink font-medium">
                                     Auguste Escoffier School of Culinary Arts
                                 </span>
-                                , and sharpened his craft in the kind of kitchens that don't allow
-                                shortcuts — Texas BBQ joints with smokers older than he is, and
-                                Mexican kitchens where the abuelas grade your salsa.
+                                , then took the craft straight to the streets.
                             </p>
                             <p>
-                                What you get is a chef who treats every gathering like it matters,
-                                because it does. Whether it's a dinner for two or a backyard for
-                                seventy-five, the food shows up cooked with care, served with
-                                pride, and finished with something sweet.
+                                Ali doesn't run a restaurant. He cooks{" "}
+                                <span className="text-brand-ink font-medium">in public</span> — at
+                                The Thursty Turtle, at lunch drops for local employees, and at
+                                community events for inmates and the indigent on the first Friday
+                                of the month. The food is{" "}
+                                <span className="text-brand-ink font-medium">free</span>. The hand-cut
+                                jerky is free. The BigBoy chicken-and-bacon sandwiches are free.
+                                That's the whole point.
+                            </p>
+                            <p>
+                                Show up hungry. Stay for a story. Leave full.
                             </p>
                         </div>
 
-                        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-xl">
-                            <Stat label="Cuisines" value="5+" />
-                            <Stat label="Trained at" value="Escoffier" small />
-                            <Stat label="Based in" value="Converse, TX" small />
+                        {/* Signature menu */}
+                        <div className="mt-12 border-t-2 border-brand-ember pt-8 max-w-2xl">
+                            <div className="font-script text-3xl text-brand-ember leading-none">
+                                What he cooks
+                            </div>
+                            <h3 className="font-display text-2xl sm:text-3xl text-brand-ink mt-2">
+                                The Cookout Spread
+                            </h3>
+                            <ul className="mt-6 space-y-4">
+                                {SIGNATURE_MENU.map((item) => (
+                                    <li key={item.name} className="flex items-baseline gap-3">
+                                        <span className="font-display text-lg text-brand-ink">
+                                            {item.name}
+                                        </span>
+                                        <span className="flex-1 border-b border-dashed border-brand-clay" />
+                                        <span className="font-body italic text-sm text-brand-smoke">
+                                            {item.note}
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Where & When */}
+                        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+                            <div className="border-l-2 border-brand-ember pl-4">
+                                <div className="flex items-center gap-2 eyebrow text-brand-smoke mb-2">
+                                    <MapPin size={14} /> Cookouts at
+                                </div>
+                                <div className="font-display text-lg text-brand-ink leading-snug">
+                                    The Thursty Turtle
+                                </div>
+                                <div className="font-body text-sm text-brand-inkSoft mt-1">
+                                    1626 NE Interstate 410 Loop
+                                    <br />
+                                    San Antonio, TX
+                                </div>
+                            </div>
+                            <div className="border-l-2 border-brand-ember pl-4">
+                                <div className="flex items-center gap-2 eyebrow text-brand-smoke mb-2">
+                                    <CalIcon size={14} /> Outreach
+                                </div>
+                                <div className="font-display text-lg text-brand-ink leading-snug">
+                                    First Friday of the Month
+                                </div>
+                                <div className="font-body text-sm text-brand-inkSoft mt-1">
+                                    Meals for inmates, the indigent, and anyone needing a plate.
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Social CTAs */}
+                        <div className="mt-12 flex flex-wrap items-center gap-4">
+                            <a
+                                href={SITE.instagram}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                data-testid="about-instagram"
+                                className="inline-flex items-center gap-3 border border-brand-ink text-brand-ink px-6 py-3 eyebrow hover:bg-brand-ink hover:text-brand-bone transition-colors"
+                            >
+                                <Instagram size={16} /> {SITE.instagramHandle}
+                            </a>
+                            <a
+                                href={SITE.facebook}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                data-testid="about-facebook"
+                                className="inline-flex items-center gap-3 border border-brand-ink text-brand-ink px-6 py-3 eyebrow hover:bg-brand-ink hover:text-brand-bone transition-colors"
+                            >
+                                <Facebook size={16} /> {SITE.facebookHandle}
+                            </a>
                         </div>
                     </motion.div>
 
@@ -69,7 +148,7 @@ export const About = () => {
                         whileInView="show"
                         viewport={{ once: true, margin: "-80px" }}
                         transition={{ delay: 0.15 }}
-                        className="lg:col-span-5 lg:order-1"
+                        className="lg:col-span-5 lg:order-1 lg:sticky lg:top-28"
                     >
                         <div className="relative">
                             <div className="aspect-[4/5] overflow-hidden bg-brand-clay">
@@ -79,9 +158,9 @@ export const About = () => {
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -right-4 bg-brand-bone border border-brand-clay px-6 py-4 max-w-[260px] hidden sm:block">
+                            <div className="absolute -bottom-6 -right-4 bg-brand-bone border border-brand-clay px-6 py-4 max-w-[280px] hidden sm:block">
                                 <p className="font-script text-2xl text-brand-ember leading-tight">
-                                    "Cook like you're feeding people you love."
+                                    "Cook for the block. Charge nothing. Feed everybody."
                                 </p>
                                 <p className="eyebrow text-brand-smoke mt-2">— Ali's rule no. 1</p>
                             </div>
@@ -92,16 +171,3 @@ export const About = () => {
         </section>
     );
 };
-
-const Stat = ({ label, value, small }) => (
-    <div className="border-l-2 border-brand-ember pl-4">
-        <div
-            className={`font-display text-brand-ink leading-none ${
-                small ? "text-xl sm:text-2xl" : "text-3xl sm:text-4xl"
-            }`}
-        >
-            {value}
-        </div>
-        <div className="eyebrow text-brand-smoke mt-2">{label}</div>
-    </div>
-);

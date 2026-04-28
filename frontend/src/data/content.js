@@ -2,10 +2,12 @@ export const SITE = {
     name: "Angel Ali",
     alias: "Chef Boy Ali",
     nickname: "The Cook of Converse",
-    location: "Converse, Texas",
+    location: "San Antonio & Converse, Texas",
+    venue: "The Thursty Turtle · 1626 NE Interstate 410 Loop, San Antonio, TX",
     instagram: "https://www.instagram.com/chefboyy_ali/",
     instagramHandle: "@chefboyy_ali",
-    email: "hello@chefboyali.com",
+    facebook: "https://www.facebook.com/chefboyyali",
+    facebookHandle: "@chefboyyali",
 };
 
 export const HERO_IMAGE = "https://images.pexels.com/photos/37128259/pexels-photo-37128259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1200&w=1800";
