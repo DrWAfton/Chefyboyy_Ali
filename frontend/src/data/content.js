@@ -12,13 +12,13 @@ export const SITE = {
 
 export const HERO_IMAGE = "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/1ps5ny9v_Screenshot%202026-04-28%20180944.png";
 export const ABOUT_IMAGE = "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/0ovpye32_image.png";
+export const POSTER = {
+    url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/r0zkw5nj_unnamed.png",
+    alt: "San Antonio Cookout flyer · May 2 at 1 PM at The Thursty Turtle, 1 free plate per person",
+    caption: "May 2 · 1 PM · come hungry",
+};
+
 export const COOKOUT_GALLERY = [
-    {
-        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/r0zkw5nj_unnamed.png",
-        alt: "San Antonio Cookout flyer · May 2 at 1 PM at The Thursty Turtle, 1 free plate per person",
-        caption: "May 2 · 1 PM · come hungry",
-        feature: true,
-    },
     {
         url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3jk3qf2m_Screenshot%202026-04-28%20180932.png",
         alt: "Smoked pig head — New Year's special",

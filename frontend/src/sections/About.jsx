@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Instagram, Facebook, MapPin, Calendar as CalIcon } from "lucide-react";
-import { ABOUT_IMAGE, COOKOUT_GALLERY, SITE } from "../data/content";
+import { COOKOUT_GALLERY, POSTER, SITE } from "../data/content";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
@@ -183,6 +183,17 @@ export const About = () => {
                                         <figcaption className={`eyebrow text-brand-smoke mt-2 ${g.feature ? "text-sm" : "text-[0.65rem]"}`}>
                                             {g.caption}
                                         </figcaption>
+                                    </figure>
+                                ))}
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+        </section>
+    );
+};
+/figcaption>
                                     </figure>
                                 ))}
                             </div>
