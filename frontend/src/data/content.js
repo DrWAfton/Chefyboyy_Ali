@@ -14,31 +14,30 @@ export const HERO_IMAGE = "https://customer-assets.emergentagent.com/job_cook-of
 export const ABOUT_IMAGE = "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/0ovpye32_image.png";
 export const COOKOUT_GALLERY = [
     {
-        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3jk3qf2m_Screenshot%202026-04-28%20180932.png",
-        alt: "Slow-smoked pig head finished with gold leaf",
-        caption: "Pig head · gold leaf finish",
-    },
-    {
-        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/ip236xla_Screenshot%202026-04-28%20181109.png",
-        alt: "The Dragon Heart — whole bird, spice-rubbed and grilled",
-        caption: "Dragon Heart · whole bird",
-    },
-    {
-        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/hfkb1uq2_image.png",
-        alt: "Smoked ribs with fries",
-        caption: "Smoked ribs · fries",
-        crop: { scale: 1.85, originX: 32, originY: 55 },
-    },
-    {
-        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3rpuou07_image.png",
-        alt: "Whole ribcage, sliced and glazed",
-        caption: "Whole ribcage · sliced fresh",
-        crop: { scale: 1.9, originX: 32, originY: 50 },
-    },
-    {
         url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/r0zkw5nj_unnamed.png",
         alt: "San Antonio Cookout flyer · May 2 at 1 PM at The Thursty Turtle, 1 free plate per person",
         caption: "May 2 · 1 PM · come hungry",
+        feature: true,
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3jk3qf2m_Screenshot%202026-04-28%20180932.png",
+        alt: "Smoked pig head — New Year's special",
+        caption: "Pig head · New Year's Special",
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/ip236xla_Screenshot%202026-04-28%20181109.png",
+        alt: "Dragon Heart — whole bird, low and slow",
+        caption: "Dragon Heart · low and slow",
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/l6o9zixy_Screenshot%202026-04-28%20194834.png",
+        alt: "Smoked ribs with fries",
+        caption: "Smoked ribs · fries",
+    },
+    {
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/kbzt3480_Screenshot%202026-04-28%20194343.png",
+        alt: "Whole ribcage, glazed and smoked, on the cutting board",
+        caption: "Whole ribcage · sliced fresh",
     },
 ];
 

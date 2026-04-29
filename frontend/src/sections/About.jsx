@@ -145,10 +145,10 @@ export const About = () => {
                                 />
                             </div>
                             <div className="absolute -bottom-6 -right-4 bg-brand-bone border border-brand-clay px-6 py-4 max-w-[280px] hidden sm:block">
-                                <p className="font-script text-2xl text-brand-ember leading-tight">
-                                    "Cook for the block. Charge nothing. Feed everybody."
+                                <p className="font-script text-3xl text-brand-ember leading-tight">
+                                    "For the People!"
                                 </p>
-                                <p className="eyebrow text-brand-smoke mt-2">— Ali's rule no. 1</p>
+                                <p className="eyebrow text-brand-smoke mt-2">— A quote from Chef Boy Ali</p>
                             </div>
                         </div>
 
@@ -163,9 +163,9 @@ export const About = () => {
                                     <figure
                                         key={i}
                                         data-testid={`cookout-photo-${i}`}
-                                        className="group"
+                                        className={`group ${g.feature ? "col-span-2" : ""}`}
                                     >
-                                        <div className="aspect-square overflow-hidden bg-brand-clay">
+                                        <div className={`overflow-hidden bg-brand-clay ${g.feature ? "aspect-[4/5]" : "aspect-square"}`}>
                                             <img
                                                 src={g.url}
                                                 alt={g.alt}
@@ -180,7 +180,7 @@ export const About = () => {
                                                 }
                                             />
                                         </div>
-                                        <figcaption className="eyebrow text-brand-smoke mt-2 text-[0.65rem]">
+                                        <figcaption className={`eyebrow text-brand-smoke mt-2 ${g.feature ? "text-sm" : "text-[0.65rem]"}`}>
                                             {g.caption}
                                         </figcaption>
                                     </figure>
