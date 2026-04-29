@@ -134,26 +134,41 @@ export const About = () => {
                         whileInView="show"
                         viewport={{ once: true, margin: "-80px" }}
                         transition={{ delay: 0.15 }}
-                        className="lg:col-span-5 lg:order-1"
+                        className="lg:col-span-5 lg:order-1 space-y-12"
                     >
-                        <div className="relative">
-                            <div className="aspect-[4/5] overflow-hidden bg-brand-clay">
+                        {/* Standalone quote card */}
+                        <figure className="bg-brand-bone border border-brand-clay px-7 py-8 sm:px-9 sm:py-10 relative">
+                            <span className="absolute -top-3 left-7 bg-brand-bone px-2 eyebrow text-brand-ember">
+                                Quote
+                            </span>
+                            <blockquote className="font-script text-4xl sm:text-5xl text-brand-ember leading-tight">
+                                "For the People!"
+                            </blockquote>
+                            <figcaption className="eyebrow text-brand-smoke mt-4">
+                                — Chef Boy Ali
+                            </figcaption>
+                        </figure>
+
+                        {/* Featured poster — Next Cookout */}
+                        <figure data-testid="featured-poster" className="group">
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="h-px w-8 bg-brand-ember" />
+                                <span className="eyebrow text-brand-ember">Next Cookout</span>
+                            </div>
+                            <div className="aspect-[4/5] sm:aspect-[3/4] max-w-md overflow-hidden bg-brand-clay border border-brand-clay">
                                 <img
-                                    src={ABOUT_IMAGE}
-                                    alt="Spice-rubbed chicken on the grill"
-                                    className="w-full h-full object-cover"
+                                    src={POSTER.url}
+                                    alt={POSTER.alt}
+                                    className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -right-4 bg-brand-bone border border-brand-clay px-6 py-4 max-w-[280px] hidden sm:block">
-                                <p className="font-script text-3xl text-brand-ember leading-tight">
-                                    "For the People!"
-                                </p>
-                                <p className="eyebrow text-brand-smoke mt-2">— A quote from Chef Boy Ali</p>
-                            </div>
-                        </div>
+                            <figcaption className="eyebrow text-brand-smoke mt-3">
+                                {POSTER.caption}
+                            </figcaption>
+                        </figure>
 
                         {/* Cookout gallery */}
-                        <div className="mt-12">
+                        <div>
                             <div className="flex items-center gap-3 mb-5">
                                 <span className="h-px w-8 bg-brand-ember" />
                                 <span className="eyebrow text-brand-ember">Off the Grill</span>
@@ -163,24 +178,16 @@ export const About = () => {
                                     <figure
                                         key={i}
                                         data-testid={`cookout-photo-${i}`}
-                                        className={`group ${g.feature ? "col-span-2" : ""}`}
+                                        className="group"
                                     >
-                                        <div className={`overflow-hidden bg-brand-clay ${g.feature ? "aspect-[4/5]" : "aspect-square"}`}>
+                                        <div className="aspect-square overflow-hidden bg-brand-clay">
                                             <img
                                                 src={g.url}
                                                 alt={g.alt}
                                                 className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-                                                style={
-                                                    g.crop
-                                                        ? {
-                                                              transform: `scale(${g.crop.scale})`,
-                                                              transformOrigin: `${g.crop.originX}% ${g.crop.originY}%`,
-                                                          }
-                                                        : undefined
-                                                }
                                             />
                                         </div>
-                                        <figcaption className={`eyebrow text-brand-smoke mt-2 ${g.feature ? "text-sm" : "text-[0.65rem]"}`}>
+                                        <figcaption className="eyebrow text-brand-smoke mt-2 text-[0.7rem]">
                                             {g.caption}
                                         </figcaption>
                                     </figure>
