@@ -156,9 +156,9 @@ export const About = () => {
                         <div className="mt-12">
                             <div className="flex items-center gap-3 mb-5">
                                 <span className="h-px w-8 bg-brand-ember" />
-                                <span className="eyebrow text-brand-ember">From the Cookouts</span>
+                                <span className="eyebrow text-brand-ember">Off the Grill</span>
                             </div>
-                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+                            <div className="grid grid-cols-2 gap-3 sm:gap-4">
                                 {COOKOUT_GALLERY.map((g, i) => (
                                     <figure
                                         key={i}

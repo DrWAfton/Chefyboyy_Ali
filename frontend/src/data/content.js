@@ -15,37 +15,30 @@ export const ABOUT_IMAGE = "https://customer-assets.emergentagent.com/job_cook-o
 export const COOKOUT_GALLERY = [
     {
         url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3jk3qf2m_Screenshot%202026-04-28%20180932.png",
-        alt: "Slow-smoked whole pig finished with gold leaf",
-        caption: "Whole pig · gold leaf finish",
+        alt: "Slow-smoked pig head finished with gold leaf",
+        caption: "Pig head · gold leaf finish",
     },
     {
         url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/ip236xla_Screenshot%202026-04-28%20181109.png",
-        alt: "Spice-rubbed whole chicken on the grill",
-        caption: "Whole bird · low and slow",
+        alt: "The Dragon Heart — whole bird, spice-rubbed and grilled",
+        caption: "Dragon Heart · whole bird",
     },
     {
         url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/hfkb1uq2_image.png",
-        alt: "Smoked beef ribs with shoestring fries",
-        caption: "Smoked ribs · shoestring fries",
-        crop: { scale: 2.4, originX: 30, originY: 55 },
+        alt: "Smoked ribs with fries",
+        caption: "Smoked ribs · fries",
+        crop: { scale: 1.85, originX: 32, originY: 55 },
     },
     {
         url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/3rpuou07_image.png",
-        alt: "Bacon-wrapped slab fresh off the grill",
-        caption: "Bacon weave · sliced fresh",
-        crop: { scale: 2.5, originX: 32, originY: 52 },
+        alt: "Whole ribcage, sliced and glazed",
+        caption: "Whole ribcage · sliced fresh",
+        crop: { scale: 1.9, originX: 32, originY: 50 },
     },
     {
-        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/te2916ha_image.png",
-        alt: "Wood platter loaded with grilled meats and bread",
-        caption: "The cookout platter",
-        crop: { scale: 2.4, originX: 32, originY: 57 },
-    },
-    {
-        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/4hts4tr4_image.png",
-        alt: "Event flyer: May 2, 1 PM at The Thursty Turtle, 1 free plate per person",
+        url: "https://customer-assets.emergentagent.com/job_cook-of-converse/artifacts/r0zkw5nj_unnamed.png",
+        alt: "San Antonio Cookout flyer · May 2 at 1 PM at The Thursty Turtle, 1 free plate per person",
         caption: "May 2 · 1 PM · come hungry",
-        crop: { scale: 2.5, originX: 34, originY: 50 },
     },
 ];
 
