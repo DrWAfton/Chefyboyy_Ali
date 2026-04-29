@@ -193,14 +193,3 @@ export const About = () => {
         </section>
     );
 };
-/figcaption>
-                                    </figure>
-                                ))}
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-            </div>
-        </section>
-    );
-};
