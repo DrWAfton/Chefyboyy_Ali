@@ -125,3 +125,7 @@ body {
         border-bottom-color: inherit;
     }
 }
+
+#emergent-badge, .emergent-watermark, [class*="made-with-emergent"] {
+    display: none !important;
+}
