@@ -7,6 +7,8 @@ import { Navbar } from "./sections/Navbar";
 import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
 
+document.title = "Chefboy Ali";
+
 const Home = () => (
     <main data-testid="home-page" className="bg-brand-bone">
         <Navbar />
